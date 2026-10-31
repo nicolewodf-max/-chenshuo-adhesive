@@ -1,0 +1,131 @@
+{
+  "src": "D:\\chenshuo website\\b2b-website\\contact.html",
+  "url": "file:///D:/chenshuo%20website/b2b-website/contact.html",
+  "outdir": "D:\\chenshuo website\\b2b-website\\_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "screenshot": "D:\\chenshuo website\\b2b-website\\_shots\\contact_desktop.jpg",
+      "screenshotBytes": 68462,
+      "truncated": false,
+      "structure": {
+        "title": "Contact & Request a Quote — Jiangxi Chenshuo Adhesive",
+        "firstH1": "Contact Us",
+        "viewport": {
+          "w": 1416,
+          "h": 728
+        },
+        "fullpage": {
+          "w": 1416,
+          "h": 1325
+        },
+        "counts": {
+          "section": 2,
+          "h1": 1,
+          "h2": 2,
+          "img": 0,
+          "canvas": 0,
+          "svg": 0,
+          "links": 17,
+          "buttons": 1
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "reportSource": "cdp"
+    },
+    "mobile": {
+      "screenshot": "D:\\chenshuo website\\b2b-website\\_shots\\contact_mobile.jpg",
+      "screenshotBytes": 101239,
+      "truncated": false,
+      "structure": {
+        "title": "Contact & Request a Quote — Jiangxi Chenshuo Adhesive",
+        "firstH1": "Contact Us",
+        "viewport": {
+          "w": 476,
+          "h": 672
+        },
+        "fullpage": {
+          "w": 476,
+          "h": 2556
+        },
+        "counts": {
+          "section": 2,
+          "h1": 1,
+          "h2": 2,
+          "img": 0,
+          "canvas": 0,
+          "svg": 0,
+          "links": 17,
+          "buttons": 1
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "reportSource": "cdp"
+    }
+  },
+  "engine": "chrome_cli",
+  "chromiumExec": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "engineDegraded": true,
+  "engineDegradedReason": "playwright 未装",
+  "elapsedSec": 12.25,
+  "schemaVersion": 2,
+  "status": "pass",
+  "engineInfo": {
+    "name": "chrome_cli",
+    "degraded": true,
+    "degradedReasons": [
+      "playwright 未装"
+    ]
+  },
+  "input": {
+    "original": "D:\\chenshuo website\\b2b-website\\contact.html",
+    "resolvedPath": "D:\\chenshuo website\\b2b-website\\contact.html",
+    "baseUrl": "file:///D:/chenshuo%20website/b2b-website/contact.html",
+    "protocol": "file",
+    "cwd": "D:\\chenshuo website",
+    "mediaMode": {
+      "reducedMotion": true
+    }
+  },
+  "artifacts": {
+    "screenshots": [
+      {
+        "viewport": "desktop",
+        "path": "D:\\chenshuo website\\b2b-website\\_shots\\contact_desktop.jpg",
+        "size": 68462,
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      },
+      {
+        "viewport": "mobile",
+        "path": "D:\\chenshuo website\\b2b-website\\_shots\\contact_mobile.jpg",
+        "size": 101239,
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      }
+    ]
+  },
+  "summary": {
+    "blocker": 0,
+    "error": 0,
+    "warning": 0,
+    "info": 0
+  },
+  "findings": [],
+  "prioritizedActions": [],
+  "reportPath": "D:\\chenshuo website\\b2b-website\\_shots\\report.json"
+}
