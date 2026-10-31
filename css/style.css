@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+  font-family: "Barlow", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.6;
   color: var(--ink-3);
@@ -86,6 +86,7 @@ ul { margin: 0 0 1em; padding-left: 1.2em; }
   display: flex; align-items: center; justify-content: center;
   flex: 0 0 auto;
 }
+.brand-logo { width: auto; height: 40px; border-radius: 6px; display: block; flex: 0 0 auto; }
 .brand-name { font-family: "Barlow Condensed", Arial, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: .05em; color: var(--ink); line-height: 1; }
 .brand-sub { display: block; font-family: "Barlow", Arial, sans-serif; font-weight: 500; font-size: .58rem; letter-spacing: .18em; color: var(--muted); margin-top: 3px; }
 
@@ -193,9 +194,33 @@ table.specs td:first-child { font-weight: 500; color: var(--ink); white-space: n
 .chip--accent { background: rgba(232, 117, 26, .1); border-color: rgba(232, 117, 26, .3); color: var(--amber-dark); }
 
 /* ---------- Anchor nav ---------- */
-.cat-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
-.cat-nav a { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 8px 16px; font-weight: 600; font-size: .92rem; color: var(--ink); text-decoration: none; }
-.cat-nav a:hover { border-color: var(--amber); color: var(--amber-dark); }
+.cat-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; align-items: center; }
+.cat-nav > a, .cat-drop summary {
+  background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 8px 16px;
+  font-weight: 600; font-size: .92rem; color: var(--ink); cursor: pointer;
+}
+.cat-nav > a:hover { border-color: var(--amber); color: var(--amber-dark); text-decoration: none; }
+.cat-drop { position: relative; }
+.cat-drop summary { list-style: none; }
+.cat-drop summary::-webkit-details-marker { display: none; }
+.cat-drop summary::after { content: "▾"; margin-left: 8px; color: var(--amber-dark); font-size: .8rem; }
+.cat-drop[open] summary { border-color: var(--amber); color: var(--amber-dark); }
+.cat-drop-menu {
+  position: absolute; left: 0; top: calc(100% + 6px); z-index: 40;
+  background: #fff; border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow);
+  padding: 8px; min-width: 360px; display: flex; flex-direction: column; gap: 2px;
+}
+.cat-drop-menu a { display: block; padding: 9px 12px; border-radius: 6px; font-weight: 500; font-size: .92rem; color: var(--ink-3); }
+.cat-drop-menu a:hover { background: var(--steel); color: var(--amber-dark); text-decoration: none; }
+
+/* ---------- Language switch ---------- */
+.lang-switch { display: flex; gap: 4px; align-items: center; margin-left: 4px; }
+.lang-switch a {
+  padding: 5px 9px; border-radius: 6px; font-size: .82rem; font-weight: 600;
+  color: var(--ink-3); border: 1px solid var(--line); background: #fff;
+}
+.lang-switch a:hover { border-color: var(--amber); color: var(--amber-dark); text-decoration: none; }
+.lang-switch a.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
 
 /* ---------- Sub section inside products ---------- */
 .product-block { margin-bottom: 56px; }
@@ -296,8 +321,13 @@ table.specs td:first-child { font-weight: 500; color: var(--ink); white-space: n
   .nav-toggle:checked ~ .site-nav { display: block; }
   .site-nav ul { flex-direction: column; align-items: flex-start; gap: 14px; }
   .site-nav .nav-cta { display: none; }
+  .lang-switch { margin-left: 0; }
   h1 { font-size: 2.1rem; }
   .hero-copy h1 { font-size: 2.3rem; }
+}
+
+@media (max-width: 767px) {
+  .cat-drop-menu { position: static; min-width: 0; box-shadow: none; padding: 6px 0 0 6px; border: 0; }
 }
 
 @media (min-width: 560px) and (max-width: 767px) {
