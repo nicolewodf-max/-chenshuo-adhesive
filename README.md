@@ -20,10 +20,18 @@ b2b-website/
 
 ## Language switching
 
-Every page header has a language switch (EN / 中文 / РУС). Home is available in all three
-languages; Products / About / Contact are currently English. Each language home links the
-others via `rel="alternate" hreflang` for SEO. Upload all new files (index-zh.html,
-index-ru.html) to GitHub Pages when deploying.
+Every page is available in four languages: English, Chinese, Russian and Korean.
+Each page header has a language switch (EN / 中文 / РУС / KO) linking to the same
+page in the other languages:
+
+- Home: index.html · index-zh.html · index-ru.html · index-ko.html
+- Products: products.html · products-zh.html · products-ru.html · products-ko.html
+- About: about.html · about-zh.html · about-ru.html · about-ko.html
+- Contact: contact.html · contact-zh.html · contact-ru.html · contact-ko.html
+
+Each language page links the others via `rel="alternate" hreflang` for SEO.
+Upload all new files (index-zh/index-ru/index-ko and the -zh/-ru/-ko variants of
+products/about/contact) to GitHub Pages when deploying.
 
 ## Contact information
 
