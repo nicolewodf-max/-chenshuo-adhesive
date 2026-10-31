@@ -24,7 +24,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: "Barlow", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-family: "Barlow", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Malgun Gothic", "Noto Sans KR", Arial, sans-serif;
   font-size: 17px;
   line-height: 1.6;
   color: var(--ink-3);
