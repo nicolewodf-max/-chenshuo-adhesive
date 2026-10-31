@@ -1,40 +1,37 @@
-# Chenshuo B2B Website（中空玻璃耗材外贸官网）
+# Chenshuo Adhesive — Corporate Website (b2b-website)
 
-纯 HTML + CSS 静态网站，无 JavaScript，响应式（手机自适应），谷歌 SEO 友好。
+Static, responsive, SEO-friendly marketing site for **Jiangxi Chenshuo Adhesive Industry Co., Ltd.** — one-stop supplier of insulating glass consumables.
 
-## 文件结构
+Live domain: **https://www.chenshuo-ig.com**
+
+## Files
 
 ```
 b2b-website/
-├── index.html        # 首页
-├── products.html     # 产品页（硅酮胶 / 丁基胶 / 铝隔条 / 分子筛）
-├── about.html        # 公司介绍
-├── contact.html      # 联系页（Formspree 询盘表单）
-├── css/
-│   └── style.css     # 全部样式（移动优先）
-├── images/           # 图片占位目录，放真实图片后替换
-└── README.md
+├── index.html        Home — company profile, product range, WhatsApp CTA
+├── products.html     Full product line + technical specs
+├── about.html        Company, manufacturing capabilities, quality, global reach
+├── contact.html      Contact details + inquiry form
+├── css/style.css     All styles (deep navy + amber, Barlow fonts)
+└── images/           Real product & factory photos (19 files)
 ```
 
-## 上线前必改清单
+## Contact information
 
-1. **Formspree 表单 ID**：打开 `contact.html`，把 `action="https://formspree.io/f/YOUR_FORM_ID"` 中的
-   `YOUR_FORM_ID` 换成你在 [formspree.io](https://formspree.io/) 创建表单后得到的真实 ID。
-2. **图片**：把真实产品图/工厂图放入 `images/` 目录，文件名与页面中 `<img src>` 的引用一致
-   （如 `hero.jpg`、`silicone-sealant.jpg`、`butyl-sealant.jpg`、`aluminum-spacer.jpg`、
-   `molecular-sieve.jpg`、`factory.jpg`、`company.jpg`、`quality.jpg`）。推荐 3:2 或 16:9 横图。
-3. **联系方式**：4 个页面的页脚及 `contact.html` 中，替换占位邮箱 `sales@example.com`、
-   电话 `+86 138 0000 0000`、地址（江西鹰潭）为真实信息。
-4. **canonical 链接**：每页 `<head>` 中的 `https://www.yourdomain.com/...` 替换为正式域名。
-5. **产品参数**：`products.html` 中的规格表为行业典型值，标注了 `<!-- TODO -->` 注释，
-   请与生产团队核对后发布。
-6. **公司信息**：`about.html` 中的公司介绍为通用描述，成立年份、认证、产能等需核验后补充。
+- Contact: **Nicole Lee** (sales manager)
+- WhatsApp / WeChat / Mobile: **+86 156 5127 0332**
+- Email: **sales_chenshuo@163.com**
+- Address: Gongye Wu Road, Yingtan Hi-tech Industrial Zone, Yingtan, Jiangxi, China
+- Website: www.chenshuo-ig.com
 
-## 本地预览
+WhatsApp link pattern used across the site: `https://wa.me/8615651270332?text=Hello%20Chenshuo%20team%2C%20I%20am%20interested%20in%20your%20insulating%20glass%20consumables.`
 
-直接双击 `index.html` 用浏览器打开即可；表单提交需配置好 Formspree ID 并联网。
+## Before going live (TODO)
 
-## 说明
+1. **Formspree** — replace `https://formspree.io/f/YOUR_FORM_ID` in `contact.html` with your real Formspree form ID (create one at formspree.io).
+2. **Images** — `Hot-Melt Butyl` and `Molecular Sieve` product cards currently show a placeholder block; replace with real photos when available (drop a file into `images/` and update the two spots in `index.html` and `products.html`).
+3. **Verification** — after deploying, verify canonical URLs (`https://www.chenshuo-ig.com/...`) resolve correctly and Google Search Console is set up.
 
-- 字体来自 Google Fonts（Barlow / Barlow Condensed），无法访问时自动回退系统字体。
-- 页内锚点、移动端菜单均为纯 CSS 实现，无任何 JS。
+## Local preview
+
+Open any `.html` file directly in a browser — no build step, no JavaScript required.
