@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Chenshuo Adhesive — home">
-        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span class="brand-logo" aria-hidden="true"><img src="images/logo.jpg" alt="Chenshuo" width="49" height="40"></span>
         <span class="brand-name">CHENSHUO<span class="brand-sub">ADHESIVE INDUSTRY CO., LTD.</span></span>
       </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -31,6 +31,11 @@
           <li><a href="products.html" aria-current="page">Products</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li class="lang-switch" aria-label="Language switch">
+            <a href="index.html" class="is-active">EN</a>
+            <a href="index-zh.html" lang="zh">中文</a>
+            <a href="index-ru.html" lang="ru">РУС</a>
+          </li>
           <li class="nav-cta"><a class="btn btn--amber" href="contact.html">Get a Quote</a></li>
         </ul>
       </nav>
@@ -51,11 +56,16 @@
         <!-- ===== Anchor nav ===== -->
         <nav class="cat-nav" aria-label="Product categories">
           <a href="#silicone">Silicone Sealants</a>
-          <a href="#two-component">Two-Component IGU Sealants</a>
-          <a href="#butyl">Hot-Melt Butyl</a>
-          <a href="#spacer">Aluminum Spacer Bars</a>
-          <a href="#corner">Corner Keys &amp; Steel Connectors</a>
-          <a href="#molecular">Molecular Sieve</a>
+          <details class="cat-drop">
+            <summary>Insulating Glass Consumables</summary>
+            <div class="cat-drop-menu">
+              <a href="#two-component">Two-Component IGU Sealants — XH-9000 / XH-9100</a>
+              <a href="#butyl">Hot-Melt Butyl Sealant for IGU — Primary Sealing</a>
+              <a href="#spacer">Aluminum Spacer Bars — 6A to 22A</a>
+              <a href="#corner">Plastic Corner Keys &amp; Steel Connectors</a>
+              <a href="#molecular">Molecular Sieve 3A</a>
+            </div>
+          </details>
         </nav>
 
         <!-- ===== 1. Silicone sealants ===== -->
@@ -208,7 +218,7 @@
           </div>
           <p class="block-lead">The first seal of the IG unit — low moisture permeability keeps the cavity dry, with good adhesion to glass and aluminum. Suitable for fully automatic coating machines and manual application.</p>
           <div class="prod-intro">
-            <div class="ph">Hot-melt butyl sealant<br>product photo on request</div>
+            <img src="images/butyl-sealant.jpg" alt="Hot-melt butyl sealant for insulating glass" loading="lazy">
             <div>
               <div class="specs-wrap">
                 <table class="specs">
@@ -303,7 +313,7 @@
           </div>
           <p class="block-lead">3A desiccant that keeps the air space inside your IG units dry and clear. Supplied to match your spacer filling process, in standard packing or as specified.</p>
           <div class="prod-intro">
-            <div class="ph">Molecular sieve 3A<br>product photo on request</div>
+            <img src="images/molecular-sieve.jpg" alt="Molecular sieve 3A desiccant in sealed bags" loading="lazy">
             <div>
               <ul>
                 <li>Protects the IG cavity from moisture and fogging</li>

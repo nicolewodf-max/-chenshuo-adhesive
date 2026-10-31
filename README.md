@@ -8,13 +8,22 @@ Live domain: **https://www.chenshuo-ig.com**
 
 ```
 b2b-website/
-├── index.html        Home — company profile, product range, WhatsApp CTA
+├── index.html        Home (EN) — company profile, product range, WhatsApp CTA
+├── index-zh.html     Home (中文) — full Chinese version
+├── index-ru.html     Home (РУС) — full Russian version
 ├── products.html     Full product line + technical specs
 ├── about.html        Company, manufacturing capabilities, quality, global reach
 ├── contact.html      Contact details + inquiry form
 ├── css/style.css     All styles (deep navy + amber, Barlow fonts)
-└── images/           Real product & factory photos (19 files)
+└── images/           Real product & factory photos (27 files)
 ```
+
+## Language switching
+
+Every page header has a language switch (EN / 中文 / РУС). Home is available in all three
+languages; Products / About / Contact are currently English. Each language home links the
+others via `rel="alternate" hreflang` for SEO. Upload all new files (index-zh.html,
+index-ru.html) to GitHub Pages when deploying.
 
 ## Contact information
 
@@ -29,8 +38,7 @@ WhatsApp link pattern used across the site: `https://wa.me/8615651270332?text=He
 ## Before going live (TODO)
 
 1. **Formspree** — replace `https://formspree.io/f/YOUR_FORM_ID` in `contact.html` with your real Formspree form ID (create one at formspree.io).
-2. **Images** — `Hot-Melt Butyl` and `Molecular Sieve` product cards currently show a placeholder block; replace with real photos when available (drop a file into `images/` and update the two spots in `index.html` and `products.html`).
-3. **Verification** — after deploying, verify canonical URLs (`https://www.chenshuo-ig.com/...`) resolve correctly and Google Search Console is set up.
+2. **Verification** — after deploying, verify canonical URLs (`https://www.chenshuo-ig.com/...`) resolve correctly and Google Search Console is set up.
 
 ## Local preview
 
