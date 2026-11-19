@@ -262,6 +262,13 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 700; line-height: 1.25; }
 }
 .news-empty h3 { font-size: 20px; color: var(--blue); margin-bottom: 8px; }
 .news-empty p { color: var(--muted); font-size: 14.5px; max-width: 520px; margin: 0 auto; }
+.news-card { max-width: 880px; margin: 0 auto; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+.news-video { aspect-ratio: 16 / 9; background: #111; }
+.news-video video { width: 100%; height: 100%; object-fit: contain; display: block; }
+.news-body { padding: 22px 26px 26px; }
+.news-meta { font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+.news-body h3 { font-size: 20px; color: var(--blue); margin-bottom: 8px; }
+.news-body p { color: var(--muted); font-size: 14.5px; }
 
 /* ---------- contact band ---------- */
 .contact-band { background: linear-gradient(100deg, #00468b 0%, #0d5ea3 62%, #157a45 130%); color: #fff; padding: 62px 0; }
